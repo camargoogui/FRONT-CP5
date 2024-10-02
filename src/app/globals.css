@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-r from-black to-indigo-900 text-slate-200;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans text-cyan-400 uppercase;
+  }
+
+  p {
+    @apply leading-relaxed text-slate-300;
+  }
+
+  a {
+    @apply hover:text-cyan-200 transition duration-300;
+  }
+}
+
+@layer components {
+  .cosmic-title {
+    @apply text-4xl font-bold text-center text-cyan-400 uppercase mb-8;
+  }
+
+  .cosmic-container {
+    @apply max-w-7xl mx-auto py-12 px-6 bg-opacity-80 bg-black rounded-lg shadow-xl;
+  }
+
+  .cosmic-button {
+    @apply bg-cyan-500 text-slate-900 py-3 px-6 rounded-full uppercase tracking-wider shadow-lg font-semibold;
+  }
+
+  .cosmic-button:hover {
+    @apply bg-cyan-400 text-black transition duration-300;
+  }
+}
