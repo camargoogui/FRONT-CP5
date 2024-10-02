@@ -1,4 +1,4 @@
-import CalculusInput from '@/components/calculus-input';
+import CalculusInput from '@/components/calculo-logic';
 
 export default function OrbitalCalculations() {
   return (
